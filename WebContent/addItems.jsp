@@ -40,7 +40,7 @@
 						<div class="col">
 							<div class="md-row">
 								<label>Item Description</label><br>
-								<textarea rows="3" class="form-control border border-secondary" placeholder="Decription" cols=""></textarea>
+								<textarea rows="3" class="form-control border border-secondary" name="iDescription" placeholder="Decription" cols=""></textarea>
 							</div>
 						</div>				
 					</div><br>
