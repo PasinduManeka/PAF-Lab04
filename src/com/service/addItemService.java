@@ -16,7 +16,8 @@ public class addItemService {
 	public void addItem(Items i) {
 		try {
 			con=DatabaseConnection.getConnection();
-			stmt=con.prepareStatement("insert into items (itemCode,itemName,itemPrice,itemDesc) values(?,?,?,?)");
+			stmt=con.createStatement();
+			ps=con.prepareStatement("insert into items (itemCode,itemName,itemPrice,itemDesc) values(?,?,?,?)");
 			
 			ps.setString(1, i.getItemCode());
 			ps.setString(2, i.getItemName());
@@ -26,9 +27,13 @@ public class addItemService {
 			con.setAutoCommit(false);
 			con.commit();
 			
+			//System.out.print(i.getItemCode());
+			
 			
 		}catch(Exception e) {
-			System.out.println("Databsse did not connect. "+ e );
+			//System.out.println(i.getItemCode());
+			System.out.println("Database did not connect. "+ e );
+			e.printStackTrace();
 		}finally {
 			if(con!=null) {
 				try {

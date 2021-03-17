@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Add Items</title>
 <link href="./assets/bootstrap.css" rel="stylesheet">
 <link href="./assets/bootstrap.min.css" rel="stylesheet">
 </head>
@@ -15,7 +15,7 @@
 				<strong>Add Items</strong>
 			</h3>
 			<div class="card-body container">
-				<form action="#" method="post">
+				<form action="item" method="post">
 					<div class="form-row">
 						<div class="col">
 							<div class="md-row">
@@ -46,7 +46,7 @@
 					</div><br>
 					
 					<div class="md-form mt-0">
-						<input type="text" class="btn btn-outline-success form-control border border-success " name="btnSave" value="Save">
+						<input type="submit" class="btn btn-outline-success form-control border border-success " name="btnSave" value="Save">
 						
 					</div>
 					

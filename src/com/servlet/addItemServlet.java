@@ -24,7 +24,8 @@ public class addItemServlet extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		response.getWriter().append("Served at: ").append(request.getContextPath());
+		//response.getWriter().append("Served at: ").append(request.getContextPath());
+		response.sendRedirect("addItems.jsp");
 	}
 
 	/**
@@ -32,13 +33,13 @@ public class addItemServlet extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		doGet(request, response);
 		
 		String itemCode = request.getParameter("iCode");
 		String itemName = request.getParameter("iName");
 		float itemPrice = Float.parseFloat(request.getParameter("iPrice"));
 		String itemDescription = request.getParameter("iDescription");
 		
+		 System.out.println(itemCode);
 		Items it = new Items();
 		it.setItemCode(itemCode);
 		it.setItemName(itemName);
@@ -49,7 +50,7 @@ public class addItemServlet extends HttpServlet {
 		add.addItem(it);
 		
 		
-		RequestDispatcher dis = request.getRequestDispatcher("itemView.jsp");
+		RequestDispatcher dis = request.getRequestDispatcher("itemsView.jsp");
 		dis.forward(request,response);
 		
 	}
