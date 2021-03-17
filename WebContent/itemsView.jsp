@@ -65,11 +65,11 @@
  							<td><%=rs.getString("itemPrice") %></td>
  							<td><%=rs.getString("itemDesc") %></td>
  							<td><div class="form-row">
- 									<div class="col"><div class="md-row"><form action="#" method="post">
+ 									<div class="col"><div class="md-row"><form action="updateItem.jsp" method="post">
  									<input type="hidden" name="itemID" value="<%=rs.getString("itemID") %>">
  									<input type="submit" class="btn btn-outline-warning border border-warning" value="Update">
  								</form></div></div><br>
- 								<div class="col"><div class="md-row"><form action="#" method="post">
+ 								<div class="col"><div class="md-row"><form action="delete" method="post">
  									<input type="hidden" name="itemID" value="<%=rs.getString("itemID") %>">
  									<input type="submit" class="btn btn-outline-danger border border-danger" value="Delete">
  								</form></div></div>

@@ -13,5 +13,14 @@
 		<servlet-name>addItem</servlet-name>
 		<url-pattern>/item</url-pattern>
 	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>deleteItem</servlet-name>
+		<servlet-class>com.servlet.deleteItemServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>deleteItem</servlet-name>
+		<url-pattern>/delete</url-pattern>
+	</servlet-mapping>
 
 </web-app>
