@@ -34,6 +34,7 @@
  	<div class="order-container">
  		<div class="card">
  			<h3 class="card-header text-center">Items View</h3>
+ 			<div class="">
  			<div class="card-body container">
  				<table class="table table-dark text-center ">
  					<thead >
@@ -65,8 +66,8 @@
  							<td><%=rs.getString("itemPrice") %></td>
  							<td><%=rs.getString("itemDesc") %></td>
  							<td><div class="form-row">
- 									<div class="col"><div class="md-row"><form action="updateItem.jsp" method="post">
- 									<input type="hidden" name="itemID" value="<%=rs.getString("itemID") %>">
+ 									<div class="col"><div class="md-row"><form action="updateItems.jsp" method="post">
+ 									<input type="hidden" name="itemID" value=<%=rs.getString("itemID") %>>
  									<input type="submit" class="btn btn-outline-warning border border-warning" value="Update">
  								</form></div></div><br>
  								<div class="col"><div class="md-row"><form action="delete" method="post">
@@ -85,6 +86,7 @@
  					%>
  					
  				</table>
+ 			</div>
  			</div>
  		</div>
  	</div>
