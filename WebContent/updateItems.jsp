@@ -49,7 +49,7 @@
 		rs=stmt.executeQuery(sql);
 		while(rs.next()){
 %>
-				<form action="">
+				<form action="update" method="post">
 				<input type="hidden" name="itemID" value=<%=rs.getString("itemID")%>>
 					<div class="form-row">
 						<div class="col">
