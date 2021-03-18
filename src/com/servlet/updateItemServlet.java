@@ -40,6 +40,8 @@ public class updateItemServlet extends HttpServlet {
 		float itemPrice = Float.parseFloat(request.getParameter("iPrice"));
 		String itemDescription =request.getParameter("iDescription");
 		
+		System.out.println(request.getParameter("iName"));
+		
 		Items it = new Items();
 		
 		it.setItemID(id);

@@ -22,7 +22,7 @@ public class Items {
 	public String getItemName() {
 		return itemName;
 	}
-	public void setItemName(String itemaName) {
+	public void setItemName(String itemName) {
 		this.itemName = itemName;
 	}
 	public float getPrice() {

@@ -61,7 +61,7 @@
 						<div class="col">
 							<div class="md-row">
 								<label>Item Name</label><br>
-								<input type="text" name="iCode" class="form-control border border-secondary" value=<%=rs.getString("itemName")%>>
+								<input type="text" name="iName" class="form-control border border-secondary" value=<%=rs.getString("itemName")%>>
 							</div>
 						</div>
 					</div>
@@ -80,7 +80,7 @@
 						</div>				
 					</div><br>
 					<div class="md-form mt-0">
-						<input type="submit" class="btn btn-outline-success form-control border border-success " name="btnSave" value="Update">
+						<input type="submit" class="btn btn-outline-warning form-control border border-warning " name="btnSave" value="Update">
 					</div>
 				</form>
 				<%

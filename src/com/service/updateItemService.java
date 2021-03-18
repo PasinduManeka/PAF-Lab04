@@ -31,6 +31,7 @@ public class updateItemService {
 			con.setAutoCommit(false);
 			con.commit();
 			
+			//System.out.println(i.getItemName());
 			
 		}catch(Exception e) {
 			System.out.print("Database does not connect. "+e);
