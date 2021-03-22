@@ -1,7 +1,7 @@
 package com.model;
 
 
-public class Items {
+	public class Items {
 		private int itemID;
 		private String itemCode;
 		private String itemName;
